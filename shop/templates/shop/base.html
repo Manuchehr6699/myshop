@@ -1,0 +1,127 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best shop">
+    <meta name="keywords" content="shop">
+    <meta name="robots" content="index,follow">
+    <title>Shop</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-wysihtml5.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/prettify.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link href="{% static 'css/line-font.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootsnav.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsiveness.css' %}" rel="stylesheet"> </head>
+      <body>
+    <div class="wrapper">
+        <nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav">
+            <div class="container"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i class="fa fa-bars"></i></button>
+                <div class="navbar-header"> <a class="navbar-brand" href="/"><img src="{% static 'img/logo.png' %}" class="logo logo-display" alt=""><img src="{% static 'img/logo-white.png' %}" class="logo logo-scrolled" alt=""></a> </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="active"><input type="text" placeholder="Поиск товаров по сайту..." class="form-control"></li>
+                        <li class="dropdown megamenu-fw"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu</a>
+                            <ul class="dropdown-menu megamenu-content" role="menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-menu col-md-3">
+
+                                            <h6 class="title">Категории</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                   <li {% if not category %}class="selected"{% endif %}>
+                                                <a href="{% url "shop:product_list" %}">Все категории</a>
+                                                    </li>
+
+                                                    {% for c in categories %}
+                                                        <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                                                            <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                                                        </li>{% endfor %}</ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+
+
+                        <li><a href="/"><i class="fa fa-pencil" aria-hidden="true"></i>Вход/Регистрация</a></li>
+
+                    </ul>
+
+
+
+
+                </div>
+            </div>
+         <div class="cart">
+    {% with total_items=cart|length %}
+        {% if cart|length > 0 %}
+            </u><span class="fa fa-shopping-cart"></span> Ваша корзина:
+            <a href="{% url "cart:cart_detail" %}">
+                кол. товаров {{ total_items }},
+                сумма: {{ cart.get_total_price }} .Tjs
+            </a>
+        {% else %}
+            <span class="fa fa-shopping-cart"></span> Ваша корзина пуста.
+        {% endif %}
+    {% endwith %}
+</div>
+        </nav>
+        <div class="clearfix"></div>
+
+
+
+
+       <div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+        <div class="clearfix"></div>
+
+            <div class="row copyright">
+                <div class="container">
+                    <p>Copyright by Manuchehr © 2018</p>
+                </div>
+            </div>
+
+        <div class="clearfix"></div>
+
+        </div>
+
+       <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/bootsnav.js' %}"></script>
+        <script src="{% static 'js/viewportchecker.js' %}"></script>
+        <script src="{% static 'js/bootstrap-select.min.js' %}"></script>
+        <script src="{% static 'js/wysihtml5-0.3.0.js' %}"></script>
+        <script src="{% static 'js/bootstrap-wysihtml5.js' %}"></script>
+        <script src="{% static 'js/jQuery.style.switcher.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){$('#styleOptions').styleSwitcher();});
+        </script>
+        <script>
+            function openRightMenu(){document.getElementById("rightMenu").style.display="block";}function closeRightMenu(){document.getElementById("rightMenu").style.display="none";}
+        </script>
+    </div>
+      </body>
+</html>

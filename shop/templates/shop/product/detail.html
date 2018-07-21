@@ -1,0 +1,47 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% block title %}
+    {% if category %}{{ category.title }}{% else %}Products{% endif %}
+{% endblock %}
+{% block content %}
+    <section class='inner-header-title'>
+
+                <h2 style="font-family: 'Dosis', sans-serif; color: brown;">{% if category %}{{ category.name }}{% else %}Характеристика товара{% endif %}</h2>
+
+        </section><div class='clearfix'></div>
+    <div class="row"><div class="col-md-12">
+        <ul class="cat_nav">
+            <li {% if not category %}class="selected"{% endif %}>
+                <a href="{% url "shop:product_list" %}">Все категории</a>
+            </li>
+            {% for c in categories %}
+                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div></div>
+
+
+    <div class="product-detail">
+
+    <table border="1" style="border-color: #F0F0F0">
+        <tr>
+            <td rowspan="4" class="td_image"><img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}"></td>
+            <td><center><p class="cat_name"><a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></p></center></td>
+        </tr>
+        <tr><td><h1>{{ product.name }}</h1></td></tr>
+        <tr><td><p class="description">{{ product.description|linebreaks }}</p></td></tr>
+        <tr><td><p class="price"><span class="fa fa-money"></span> {{  product.price  }} .Tjs</p></td></tr>
+    </table>
+        </div>
+<div class="clear_top"></div>
+    <div class="cart_add"><center>
+    <h2>{{  product.price  }} .Tjs</h2><br>
+<form action="{% url "cart:cart_add" product.id %}" method="post">
+    {{ cart_product_form }}
+    {% csrf_token %}
+    <br><button type="submit"><span class="fa fa-cart-arrow-down"></span> В карзину</button>
+</form></center></div><div class="clear_bot"></div>
+
+{% endblock %}

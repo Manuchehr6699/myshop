@@ -1,0 +1,37 @@
+{% extends "shop/base.html" %}
+
+{% block title %}Checkout{% endblock %}
+
+{% block content %}
+    <section class='inner-header-title'>
+
+                <h2 style="font-family: 'Dosis', sans-serif; color: brown;">Оформление заказа</h2>
+
+        </section><div class='clearfix'></div>
+
+    <div class="order-info">
+        <div class="row"><div class="col-md-12"><h3>Ваш заказ</h3><hr>
+<ul>
+    {% for item in cart %}
+        <li>
+            {{ item.quantity }}x {{ item.product.name }}
+            <span>${{ item.total_price }}</span>
+        </li><hr>
+    {% endfor %}
+    {% if cart.coupon %}
+        <li>
+            "{{ cart.coupon.code }}" ({{ cart.coupon.discount }}% off)
+            <span style="color: red;">- ${{ cart.get_discount|floatformat:"2" }}</span>
+        </li>
+    {% endif %}
+</ul>
+
+       <p><b>Итого: ${{ cart.get_total_price_after_discount|floatformat:"2" }}</b></p><hr>
+    </div></div> </div>
+    <div class="frm_order">
+    <form action="." method="post" class="order-form">
+        {{ form.as_p }}
+        <p><input class="confirm" type="submit" value="Подтвердить заказ"></p>
+        {% csrf_token %}
+    </form></div>
+{% endblock %}

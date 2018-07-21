@@ -1,0 +1,356 @@
+/*----common------------*/
+::selection {
+    background: #AA68FC;
+    color: #fff;
+}
+a{
+color: #707c88;
+}
+.btn.btn-primary:hover, .btn.btn-primary:focus{
+    border: 1px solid #AA68FC;
+    background: #AA68FC;
+}
+.btn.btn-primary {
+    border: 1px solid #AA68FC;
+    background: #AA68FC;
+}
+.form-control:hover, .form-control:focus{
+border: 1px solid #AA68FC;
+-webkit-box-shadow:0 1px 1px rgba(170,104,252,.075);
+box-shadow:0 1px 1px rgba(170,104,252,.075);
+}
+a.btn.call-btn {
+color:#AA68FC;
+}
+.pagination li:first-child a {
+    background: #AA68FC;
+    border: 1px solid #AA68FC;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus, .pagination>li>a:hover, .pagination>li>a:focus {
+    color: #AA68FC;
+    background-color: rgba(170,104,252,0.1);
+    border-color: #AA68FC;
+}
+.inner-header-title {
+    border-bottom: 4px solid #AA68FC;
+}
+.inner-header-title.blank {
+    border-bottom: 4px solid #AA68FC;
+    background:#AA68FC;
+}
+.action-btn .dropdown-menu>li>a:hover, .action-btn .dropdown-menu>li>a:focus {
+    background: #AA68FC;
+    color: #ffffff;
+}
+/*-------- Navigation ----------*/
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color:#AA68FC !important;
+}
+/*----------Pages Styles------------*/
+.main-heading h2>span {
+    color: #AA68FC;
+}
+.main-heading span.heading-line {
+background: #AA68FC;
+}
+.banner-caption .btn-primary:focus, .banner-caption .btn-primary:hover {
+    background: #AA68FC;
+    border-color: #AA68FC;
+}
+.banner-caption .btn-primary{
+background:#AA68FC;
+border-color:#AA68FC;
+}
+.job-feature:hover i {
+    background: #AA68FC;
+}
+.feature-icon i {
+    color: #AA68FC;
+	background: rgba(170,104,252,0.07);
+}
+.work-process-icon span {
+    color: #AA68FC;
+}
+.work-process-caption h4:before{
+	background:#AA68FC;
+}
+.pr-price h3 {
+    color: #AA68FC;
+}
+.download-app:before {
+    background: #AA68FC;
+}
+.app-content a.btn.call-btn:hover {
+    color: #AA68FC;
+}
+.footer-form .btn-primary:hover, .footer-form .btn-primary:focus {
+    border-color: #10c110;
+    background: #AA68FC;
+}
+.simple-banner h1 span {
+    color: #AA68FC;
+}
+.bottom-search-form button.btn.btn-primary {
+    background: #AA68FC;
+    border: 1px solid #AA68FC;
+}
+a.video-btn:hover i {
+    background: #AA68FC;
+}
+a.video-btn i {
+    color: #AA68FC;
+    box-shadow: 0px 0px 20px 0px rgba(170,104,252,0.4);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(170,104,252,0.4);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(170,104,252,0.4);
+}
+.home-three-banner h1 span {
+    color: #AA68FC;
+}
+.home-three-banner button.btn.btn-primary {
+    background: #AA68FC;
+    border: 1px solid #0bbf0b;
+}
+.gr-dark {
+    background: #AA68FC;
+}
+.gr-dark a.btn.bat-call-to-act {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.gr-dark .call-to-act-caption h3 {
+    color: rgba(255, 255, 255, 0.7);
+}
+.home-plane-banner h1 span {
+    color: #AA68FC;
+}
+a.btn.btn-banner {
+    background: #AA68FC;
+}
+#accordion .panel-heading > .panel-title > a {
+    background: #AA68FC;
+}
+#accordion .panel-title > a.collapsed:hover {
+    color: #AA68FC;
+}
+#accordion3 .panel-heading > .panel-title > a {
+    background: #AA68FC;
+}
+#accordion .panel-title>a.collapsed {
+    background: #e7ecea;
+    color: #707c88;
+}
+#accordion3 .panel-title>a.collapsed {
+    background: #35434e;
+    color: #707c88;
+}
+.brows-company:hover {
+    border-left: 4px solid #AA68FC;
+}
+.brows-job-list:hover {
+    border-left: 4px solid #AA68FC;
+}
+.brows-resume:hover {
+    border-left: 4px solid #AA68FC;
+}
+.brows-resume span.brows-resume-designation {
+    color: #AA68FC;
+}
+.brows-resume .browse-resume-rate span i {
+    color: #AA68FC;
+}
+.detail-status span {
+    color: #AA68FC;
+    background: rgba(170,104,252,0.2);
+}
+
+.container.white-shadow {
+    border-bottom: 3px solid #AA68FC;
+}
+h2.detail-title {
+    background: #AA68FC;
+}
+ul.detail-list li:before {
+    color: #AA68FC;
+}
+.contact-box i {
+    color: #AA68FC;
+}
+.inputfile + label {
+    background: #AA68FC;
+}
+.detail-pic {
+    border: 1px solid #AA68FC;
+}
+.full-detail .input-group-addon {
+    background: #AA68FC;
+    border-color: #AA68FC;
+}
+button.add-field {
+    background: #AA68FC;
+}
+.btn-login {
+    background: #AA68FC;
+}
+button.btn.btn-login {
+    background: #AA68FC;
+    border: 1px solid #AA68FC;
+}
+.login-screen span a, .signup-screen span a, .lost-ps-screen span a {
+    color: #AA68FC;
+}
+.search-filter button.btn.btn-default {
+    background: #AA68FC;
+    border: 1px solid #AA68FC;
+}
+.search-filter .dropdown-menu>li>a:hover, .search-filter .dropdown-menu>li>a:focus {
+    background: #AA68FC;
+}
+.manage-cndt .cndt-caption span {
+    color: #AA68FC;
+}
+.manage-cndt .cndt-profile-btn:hover, .manage-cndt .cndt-profile-btn:focus {
+    background: #AA68FC;
+}
+.mng-company:hover, .mng-company:focus {
+    border-color: #AA68FC;
+}
+.jn-employee:hover, .jn-employee:focus {
+    border-color: #AA68FC;
+}
+.employee-social li a:hover i, .employee-social li a:focus i {
+    background: #AA68FC;
+}
+.mng-resume h4 span.cand-designation {
+    color: #AA68FC;
+}
+.mng-resume:hover, .mng-resume:focus {
+    border-color: #AA68FC;
+}
+.manage-resume-box:hover, .manage-resume-box:focus {
+    border-left: 3px solid #AA68FC;
+}
+.pr-buy-button .pr-btn.active:hover, .pr-buy-button .pr-btn.active:focus {
+    background: #AA68FC;
+    border-color: #AA68FC;
+}
+.pr-buy-button .pr-btn {
+    border: 1px solid #AA68FC;
+    color: #AA68FC;
+}
+.login-panel label {
+    color: #AA68FC;
+}
+.nav.simple.nav-tabs li.active a {
+    background: #AA68FC;
+}
+.tab .nav-tabs li.active a, .tab .nav-tabs li.active a:hover {
+    background: #AA68FC;
+}
+.tab .nav-tabs li a {
+    color: #AA68FC;
+}
+.tab .nav-tabs li a:hover {
+    background: #AA68FC;
+}
+.pr-buy-button .pr-btn:hover, .pr-buy-button .pr-btn:focus {
+    background: #AA68FC;
+}
+.search-form button.btn.btn-default {
+    background: #AA68FC;
+    border: 1px solid #AA68FC;
+}
+ul.sidebar-list li a span {
+    color: #AA68FC;
+}
+.blog-post-date {
+    background: #AA68FC;
+}
+.post-meta span.author, .post-meta span.category a {
+    color: #AA68FC;
+}
+.post-info {
+    color: #AA68FC;
+}
+.blog-content h2:hover, .blog-content h2:focus {
+    color: #AA68FC;
+}
+.comments-form button.thm-btn.btn-comment {
+    border: 2px solid #AA68FC;
+    background: #AA68FC;
+}
+.comments-form button.thm-btn.btn-comment:hover, .comments-form button.thm-btn.btn-comment:focus {
+    color: #AA68FC;
+    border: 2px solid #AA68FC;
+}
+.rating.pull-right li i.active {
+    color: #AA68FC;
+}
+ul.list-inline.social li i:hover, ul.list-inline.social li i:focus {
+    background: #AA68FC;
+}
+.inner-header-title.advance-header-title h2 span, .inner-header-title.advance-header-title p span {
+    color: #AA68FC;
+}
+.right-sidebar h2.side-widget-title {
+    background: #AA68FC;
+}
+button.btn.btn-alrt {
+    background: #AA68FC;
+}
+.fileUpload span {
+    background: #AA68FC;
+}
+.modal .submit-btn:hover {
+    background: #AA68FC;
+}
+.breadcrumb>.active {
+    color: #AA68FC;
+}
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+    border-color: #AA68FC;
+    background: #AA68FC;
+}
+.bootstrap-select.btn-group .dropdown-menu li a:hover {
+    background: #AA68FC;
+}
+ul.detail-footer-social li a i:hover {
+    background: #AA68FC;
+}
+.error-page h2 span {
+    color:#AA68FC;
+}.error-page a.btn.btn-success.small-btn {
+    background:#AA68FC;
+    border-color:#AA68FC;
+}
+.deatil-tab-employ.tool-tab .nav.simple.nav-tabs li.active a {
+    background: rgba(170,104,252,0.15);
+    color:#AA68FC;
+    border-color:#AA68FC;
+}
+button.update-btn {
+  background:#AA68FC;
+}
+span.info-bar {
+    border: 1px solid #AA68FC;
+    background:rgba(170,104,252,0.15);
+    color:#AA68FC;
+}
+/*--------Responsive color Style-----------*/
+@media only screen  and (min-width : 768px) {
+/*------------Navigation------*/
+body nav.navbar.bootsnav ul.nav > li > a.signin {
+background:#AA68FC !important;
+}
+li.left-br {
+border-left: 1px solid rgba(170,104,252,0.4);
+}
+}
+
+@media only screen  and (min-width : 1024px) {
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+	border-color:#AA68FC;
+	}
+}
+
+
+
+

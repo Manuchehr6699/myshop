@@ -1,0 +1,41 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% block title %}
+    {% if category %}{{ category.name }}{% else %}Products{% endif %}
+{% endblock %}
+{% block content %}
+    <div id="sidebar">
+
+    <section class='inner-header-title'>
+
+                <h2 style="font-family: 'Dosis', sans-serif; color: brown;">{% if category %}{{ category.name }}{% else %}Товары{% endif %}</h2>
+
+        </section><div class='clearfix'></div>
+    <div class="row"><div class="col-md-10">
+        <ul class="cat_nav">
+            <li {% if not category %}class="selected"{% endif %}>
+                <a href="{% url "shop:product_list" %}">Все категории</a>
+            </li>
+            {% for c in categories %}
+                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div></div>
+     {% for product in products %}
+            <a href="{{ product.get_absolute_url }}"><div class='col-md-4 col-sm-6'>
+                        <div class='grid-view brows-job-list'>
+                            <div class='small_img'> <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}"></div>
+                            <div class='brows-job-position'>
+                                <h3>{{ product.name }}</h3>
+                            </div>
+                            <ul class='grid-view-caption'>
+                                <li>
+                                    <a href="{{ product.get_absolute_url }}">{{ product.name }}</a><br><p><span class='brows-job-sallery'><i class='fa fa-money'></i>{{ product.price }}.Tjs</span></p>
+                                </li>
+                            </ul>
+                        </div></div></a>
+        {% endfor %}
+    </div>
+{% endblock %}

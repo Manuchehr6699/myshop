@@ -1,0 +1,15 @@
+{% extends "shop/base.html" %}
+
+{% block title %}Спасибо!{% endblock %}
+
+
+{% block content %}
+    <section class='inner-header-title'>
+
+                <h2 style="font-family: 'Dosis', sans-serif; color: greenyellow;">Thank You!</h2>
+
+        </section><div class='clearfix'></div>
+    <div class="thanks"><h1>Спасибо за покупку!</h1><hr>
+    <p>Ваш заказ успешно принято! Номер вашего заказа №
+        <strong>{{ order.id }}</strong>.</p></div><a href="/">Главная страница</a>
+{% endblock %}
