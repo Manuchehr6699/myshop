@@ -22,13 +22,13 @@
         </ul>
     </div></div>
 
-<div class="row"><div class="col-md-16">
-    <span class="tbl_cart_detail"><table class="table table-hover">
+<div class="row"><div class="col-md-12">
+    <span class="tbl_cart_detail"><table class="table table-hover" style="padding: -4px;">
         <thead>
         <tr>
             <th>Фото</th>
             <th>Продукт</th>
-            <th>Кол.во</th>
+            <th>Кол</th>
             <th>Удалить</th>
             <th>Цена<br>товара</th>
             <th>Сумма</th>
@@ -78,7 +78,7 @@
 <tr class="total">
     <td style="font-size: 1.2em; font-weight: bold;">Итого: (Сом.)</td>
     <td colspan="3"></td>
-    <td class="num" style="font-size: 1.3em; font-weight: bold; padding-left: 15%">
+    <td colspan="2" style="font-size: 1.3em; font-weight: bold; padding-left: 12%">
         {{ cart.get_total_price_after_discount|floatformat:"2" }}
     </td>
 </tr>
