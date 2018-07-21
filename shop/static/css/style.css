@@ -4359,4 +4359,6 @@ label{font-size: 1.1em; color: #A52A2A;}
 .thanks h1{
     color: #1cc100;
 }
-
+.btns{
+    margin: 20px 0px;
+}

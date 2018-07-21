@@ -49,11 +49,11 @@
                         </a>
                     </td>
                     <td>{{ product.name }}</td>
-                    <td>{{ item.quantity }}</td>
+                    <td class="kol">{{ item.quantity }}</td>
                     <td>
                         <a class="btn btn-danger" href="{% url "cart:cart_remove" product.id%}" role="button">Удалить</a></td>
-                    <td class="num">${{ item.price }}</td>
-                    <td class="num">${{ item.total_price }}</td>
+                    <td class="num">{{ item.price }}</td>
+                    <td class="num">{{ item.total_price }}</td>
                 </tr>
             {% endwith %}
         {% endfor %}
@@ -76,7 +76,7 @@
     </tr>
 {% endif %}
 <tr class="total">
-    <td style="font-size: 1.2em; font-weight: bold;">Итого:</td>
+    <td style="font-size: 1.2em; font-weight: bold;">Итого: (Сом.)</td>
     <td colspan="4"></td>
     <td class="num" style="font-size: 1.3em; font-weight: bold;">
         ${{ cart.get_total_price_after_discount|floatformat:"2" }}
