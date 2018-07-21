@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b54a02aa-78fd-4073-bd8c-86c1f6d94683" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/templates/cart/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/templates/cart/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/responsiveness.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/responsiveness.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -117,8 +114,12 @@
       <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cart/templates/cart/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="78" column="65" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
+            <state relative-caret-position="382">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+              <folding>
+                <element signature="e#2621#2659#0#HTML" expanded="true" />
+                <element signature="e#2911#2972#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -351,7 +352,7 @@
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49919093" weight="0.5875969" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20873787" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20873787" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.32928804" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -656,8 +657,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cart/templates/cart/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="78" column="65" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
+        <state relative-caret-position="382">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding>
+            <element signature="e#2621#2659#0#HTML" expanded="true" />
+            <element signature="e#2911#2972#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
